@@ -273,3 +273,21 @@ a {
 .scrollable-tabs-container svg:hover{
   background: #333;
 }
+
+/* ======== Deals ======= */
+.deals{
+  background-color: red;
+  height: 400px;
+}
+
+/* ======== Family Box ======= */
+.family-box{
+  background-color: green;
+  height: 400px;
+}
+
+/* ======== chiken-burger ======= */
+.chiken-burger{
+  background-color: blue;
+  height: 400px;
+}
