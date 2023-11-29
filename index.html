@@ -12,6 +12,7 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link href="//fonts.googleapis.com/css?family=Roboto|Open+Sans:200,300,400,700,800,900&amp;subset=latin" rel="preload"
     as="font" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,6 +26,9 @@
         <div id="burger-menu">
           <span></span>
         </div>
+        <div class="cart-icon">
+          <i class="fa-solid fa-cart-shopping fa-2x"></i>
+        </div>
       </div>
 
       <div id="menu">
@@ -36,14 +40,12 @@
   </header>
 
   <main>
-    <!-- Hambuger Navbar Menu -->
     <div class="hero-bg" id="hero-bg">
       <div class="container">
         <div class="row">
           <div class="col-md-6 p-5">
-            <h1 class="hero-text text-white" data-aos="fade-down-right" data-aos-duration="3000">Life is a combination
-              of magic and pizza</h1>
-            <h6 class="text-white" data-aos="fade-right" data-aos-duration="1000"> – Federico Fellini</h6>
+            <h1 class="hero-text text-white" data-aos="fade-down-right" data-aos-duration="3000">Lorem ipsum dolor, sit amet consectetur adipisicing elit</h1>
+            <h6 class="text-white" data-aos="fade-right" data-aos-duration="1000"> – Demo Text</h6>
             <div data-aos="fade-right" data-aos-duration="1000">
               <a class="banner-btn" href="">View Menu</a>
             </div>
@@ -88,14 +90,60 @@
     <!-- Deals -->
     <div id="deals" class="deals">
       <div class="container">
-        
+        <h1 class="text-uppercase">Deals</h1>
+
+        <div class="row">
+          <div class="col-md-6 col-12 mb-3">
+            <div class="item-card">
+              <div class="row">
+                <div class="col item-info">
+                  <h3 class="item-title">Deal One WOW</h3>
+                  <p class="item-decription">
+                    Shack Full house/jalapeño crunch (Beef/chicken) fries and drink
+                  </p>
+                  <span class="item-price">Rs-600</span>
+                </div>
+                <div class="col item-image">
+                  <img src="assets/deal-1.png" class="float-end rounded" alt="...">
+                  <div class="cart-button">
+                    <a href="#" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-6 mb-3">
+            <div class="item-card">
+              <div class="row">
+                <div class="col item-info">
+                  <h3 class="item-title">Deal One WOW</h3>
+                  <p class="item-decription">
+                    Shack Full house/jalapeño crunch (Beef/chicken) fries and drink
+                  </p>
+                  <span class="item-price">Rs-600</span>
+                </div>
+                <div class="col item-image">
+                  <img src="assets/deal-1.png" class="float-end rounded" alt="...">
+                  <div class="cart-button">
+                    <a href="#" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+    </div>
     </div>
 
     <!-- Family Box -->
     <div id="family" class="family-box">
       <div class="container">
-
       </div>
     </div>
 
@@ -105,6 +153,9 @@
 
       </div>
     </div>
+
+    <div id="modal"></div>
+
 
   </main>
 
@@ -123,6 +174,27 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    // JavaScript code to fetch and include partial views
+    function includeHTML() {
+      const modal = document.getElementById('modal');
+
+      fetch('modal.html')
+        .then(response => response.text())
+        .then(data => {
+          modal.innerHTML = data;
+        });
+
+      // fetch('footer.html')
+      //   .then(response => response.text())
+      //   .then(data => {
+      //     footer.innerHTML = data;
+      //   });
+    }
+
+    // Call the function to include partial views
+    includeHTML();
   </script>
 </body>
 

@@ -1,6 +1,6 @@
-body {
+/* body {
   font-family: 'Roboto', sans-serif;
-}
+} */
 
 h1,
 h2,
@@ -94,6 +94,7 @@ a {
   opacity: 1;
   padding-top: 100px;
   background: rgba(0, 0, 0, 1);
+  z-index: 5;
 }
 
 #menu ul {
@@ -183,8 +184,8 @@ a {
 .scrollable-tabs{
   position: sticky;
   top: 0;
-  z-index: 1000;
-  background-color: #F9B209;
+  z-index: 2;
+  background-color: #1d1d1d;
 }
 .scrollable-tabs-container{
   font-family: 'Courier New', Courier, monospace;
@@ -262,12 +263,12 @@ a {
 
 .scrollable-tabs-container .right-arrow{
   right: 0;
-  background: linear-gradient(to left, #F9B209 50%, transparent); 
+  background: linear-gradient(to left, #1d1d1d 50%, transparent); 
   justify-content: flex-end;
 }
 
 .scrollable-tabs-container .left-arrow{
-  background: linear-gradient(to right, #F9B209 50%, transparent);
+  background: linear-gradient(to right, #1d1d1d 50%, transparent);
 }
 
 .scrollable-tabs-container svg:hover{
@@ -276,18 +277,86 @@ a {
 
 /* ======== Deals ======= */
 .deals{
-  background-color: red;
-  height: 400px;
+  /* background-color: red; */
+  /* height: 400px; */
 }
 
 /* ======== Family Box ======= */
-.family-box{
+/* .family-box{
   background-color: green;
   height: 400px;
-}
+} */
 
 /* ======== chiken-burger ======= */
-.chiken-burger{
+/* .chiken-burger{
   background-color: blue;
   height: 400px;
+} */
+
+.item-card{
+  position: relative;
+  background-color: #fff;
+  padding: 7px;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 1.25rem 0.2rem rgba(0,0,0,.08);
+  cursor: pointer;
+}
+
+.item-card .item-image img {
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+  float: inline-end;
+}
+
+.item-card .cart-button {
+  position: absolute;
+  bottom: 7px;
+  right: 8px;
+}
+
+.item-card:hover{
+  background-color: #f4f4f4;
+  z-index: 1;
+  transition: .5s all;
+}
+.item-card:hover .item-image img {
+  opacity: .7;
+  transition: .5s all;
+}
+
+.item-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.item-info .item-decription{
+  margin-bottom: 8px;
+  color: #718096;
+  font-size: .8rem;
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+  line-height: 1rem;
+}
+.item-info .item-price {
+  /* position: absolute;
+  top: 9rem; */
+  padding: 0 0.3rem;
+  background-color: #ffc107;
+  color: white;
+  border: 1px solid #ffc107;
+  width: fit-content;
+}
+@media screen and (max-width: 575.98px), screen and (min-width: 576px) and (max-width: 767.98px), screen and (min-width: 768px) and (max-width: 991.98px){
+  .item-card .item-title{
+    font-size: 1rem;
+  }
+  .item-card .item-decription{
+    font-size: 14px;
+  }
+
+
 }
