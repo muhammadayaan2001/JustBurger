@@ -119,28 +119,32 @@ a {
 
 /*============= hero-bg ============ */
 /* ============= starts ================= */
-#hero-bg {
+.hero-bg {
   min-height: fit-content;
   background-color: #1d1d1d;
 }
 
-#hero-bg .hero-text {
+.hero-bg .hero-content{
+  margin-top: 8rem;
+}
+
+.hero-bg .hero-text {
   font-weight: 550;
   font-size: 3rem;
   line-height: 1.1;
-  margin: 5rem 5rem 2rem 0rem;
+  /* margin: 5rem 5rem 2rem 0rem; */
 }
 
-#hero-bg h6 {
+.hero-bg h6 {
   font-size: 1.125rem;
   text-transform: uppercase;
   letter-spacing: 4px;
   margin: 20px 0 50px;
 }
 
-#hero-bg .floating-image {
-  height: 600px;
-  /* width: 500px; */
+.hero-bg .floating-image {
+  height: auto;
+  width: 500px;
   object-fit: cover;
   animation: floatUpDown 2s ease-in-out infinite;
   float: inline-end;
@@ -155,7 +159,7 @@ a {
   }
 }
 
-#hero-bg .banner-btn {
+.hero-bg .banner-btn {
   border: 2px solid #fff;
   border-radius: 50px;
   padding: 20px 47px 20px 46px;
@@ -167,7 +171,7 @@ a {
   color: #fff;
 }
 
-#hero-bg .banner-btn:hover {
+.hero-bg .banner-btn:hover {
   background-color: #F9B209;
   border: none;
   color: #fff;
@@ -270,24 +274,7 @@ a {
   background: #333;
 }
 
-/* ======== Deals ======= */
-.deals{
-  /* background-color: red; */
-  /* height: 400px; */
-}
-
-/* ======== Family Box ======= */
-/* .family-box{
-  background-color: green;
-  height: 400px;
-} */
-
-/* ======== chiken-burger ======= */
-/* .chiken-burger{
-  background-color: blue;
-  height: 400px;
-} */
-
+/* Item Card */
 .item-card{
   position: relative;
   background-color: #fff;
@@ -345,14 +332,5 @@ a {
   color: white;
   border: 1px solid #ffc107;
   width: fit-content;
+  margin-top: 25px;
 }
-/* @media screen and (max-width: 575.98px), screen and (min-width: 576px) and (max-width: 767.98px), screen and (min-width: 768px) and (max-width: 991.98px){
-  .item-card .item-title{
-    font-size: 1rem;
-  }
-  .item-card .item-decription{
-    font-size: 14px;
-  }
-
-
-} */
