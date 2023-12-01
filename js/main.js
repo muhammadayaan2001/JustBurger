@@ -1,11 +1,11 @@
 // ======= Hamburger ======== ////
-var burgerMenu = document.getElementById('burger-menu');
+var cartItem = document.getElementById('cart-items');
 
-var overlay = document.getElementById('menu');
+var cartOverlay = document.getElementById('shopping-items');
 
-burgerMenu.addEventListener('click', function() {
-  this.classList.toggle("close");
-  overlay.classList.toggle("overlay");
+cartItem.addEventListener('click', function() {
+  cartOverlay.classList.toggle("overlay");
+  this.classList.toggle("overlay"); // Toggle the overlay class on cart-items
 });
 // ======== Hamburger Ends ========= ///
 
