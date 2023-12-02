@@ -1,11 +1,11 @@
 // ======= Hamburger ======== ////
-var cartItem = document.getElementById('cart-items');
-var cartOverlay = document.getElementById('shopping-items');
+var cartItem = document.getElementById('cart-icon');
+var cartOverlay = document.getElementById('cart');
 var overlay = document.getElementById('overlay');
 var closeSvg = document.getElementById('close');
 
 cartItem.addEventListener('click', function() {
-  cartOverlay.classList.toggle("list"); // add class 'list' on div where id = shopping-items
+  cartOverlay.classList.toggle("list"); // add class 'list' on div where id = cart
   overlay.classList.toggle("overlay"); // Toggle the overlay class on the entire page
   disappearOverlay();
 });
