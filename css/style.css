@@ -18,7 +18,132 @@ a {
 .logo img{
   width: 250px;
 }
+/* Hamburger */
+#cart-items {
+    cursor: pointer;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+}
 
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity (0.5) for the light black effect */
+  z-index: 5; /* Adjust z-index to cover the entire page but stay behind the shopping items */
+  display: none; /* Initially hidden */
+}
+#overlay.overlay {
+  display: block;
+}
+
+#shopping-items {
+    z-index: 1;
+    min-width: 25%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    padding: 24px;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#shopping-items.list {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 40px;
+    background-color: #ffffff;
+    /* background-color: transparent; Set shopping items background as transparent */
+    z-index: 6;
+    border-radius: 25px 0px 0px 25px;
+}
+
+#shopping-items svg{
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: rgb(219, 219, 219);
+  padding: 5px;
+  border-radius: 25px;
+}
+#shopping-items svg:hover{
+  background: red;
+  color: white;
+}
+
+#shopping-items ul {
+    padding: 0;
+    margin-top: 25px;
+}
+
+#shopping-items li {
+    list-style: none;
+}
+
+#shopping-items a {
+    color: #000000;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.cart-icon i{
+  font-size: 24px;
+  color: #1d1d1d;
+}
+
+.cart-icon .badge{
+  position: absolute;
+  background-color: #F9B209;
+  border-radius: 50%;
+  top: -10px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-items img {
+  width: 50px;
+  border-radius: 10px ;
+}
+
+.counter {
+  width: 150px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counter input {
+  width: 50px;
+  border: 0;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+  background: #0052cc;
+  color: #fff;
+  appearance: none;
+  outline: 0;
+}
+.counter span {
+  display: block;
+  font-size: 25px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: #0052cc;
+  user-select: none;
+}
 /* ============= ends ================= */
 
 /*============= hero-bg ============ */
@@ -200,7 +325,14 @@ a {
   bottom: 7px;
   right: 8px;
 }
-
+.item-card .cart-button a{
+  background: #1d1d1d;
+  border: none;
+  transition: .5s all;
+}
+.item-card .cart-button a:hover{
+  background: #F9B209;
+}
 
 .item-card:hover{
   background-color: #f4f4f4;

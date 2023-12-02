@@ -4,49 +4,92 @@
       width: 100%;
       margin: 50px 0px 50px 0px;
     }
-    .item-card .item-title{
+
+    .item-card .item-title {
       font-size: 16px;
     }
-    .item-card .item-decription{
+
+    .item-card .item-decription {
       font-size: 10px;
     }
-    .item-card .item-price{
+
+    .item-card .item-price {
       position: absolute;
       margin-top: 5rem;
     }
+
+    #shopping-items {
+      min-width: 100%;
+      min-height: 100%;
+      padding: 10px;
+    }
+
+    #shopping-items.list {
+      border-radius: 0px;
+    }
+
   }
+
   /* CSS Rules for landscape mobile devices and tablets */
   @media only screen and (min-width: 481px) and (max-width: 767px) {
-    .item-card .item-title{
+    .item-card .item-title {
       font-size: 16px;
     }
-    .item-card .item-decription{
+
+    .item-card .item-decription {
       font-size: 12px;
     }
-    .item-card .item-price{
+
+    .item-card .item-price {
       margin-top: 25px;
-    } 
+    }
+
+    #shopping-items {
+      min-width: 100%;
+      min-height: 100%;
+    }
+    #shopping-items.list {
+      border-radius: 0px;
+    }
   }
+
   /* CSS Rules for tablets and small laptops */
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .hero-bg .floating-image {
       width: 100%;
       margin: 50px 0px 50px 0px;
     }
+
     .hero-bg .hero-content {
       margin-top: 4rem;
-     }
+    }
 
-    .item-card .item-title{
+    .item-card .item-title {
       font-size: 16px;
     }
-    .item-card .item-decription{
+
+    .item-card .item-decription {
       font-size: 10px;
     }
-    .item-card .item-price{
+
+    .item-card .item-price {
       margin-top: 0px;
-    } 
+    }
+
+    #shopping-items {
+      min-width: 100%;
+      min-height: 100%;
+      padding: 15px;
+    }
+    #shopping-items {
+      min-width: 100%;
+      min-height: 100%;
+    }
+    #shopping-items.list {
+      border-radius: 0px;
+    }
   }
+
   /* CSS Rules for laptops and desktops */
   /* @media only screen and (min-width: 1025px) {
     .hero-bg .hero-content {
