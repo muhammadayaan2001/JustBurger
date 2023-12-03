@@ -28,24 +28,26 @@
           <a class="" href="#"><img src="assets/logo.png" alt="" srcset=""></a>
         </div>
 
-        <div id="cart-icon" class="cart-icon">
+        <d  iv id="cart-icon" class="cart-icon">
           <span class="badge">0</span>
           <i class="fa-solid fa-cart-shopping"></i>
-        </div>
+        </d>
       </div>
       
       <div id="cart">
         <div class="cart-details d-flex justify-content-between">
-          <h4>Your Cart Item</h4>
+          <h4 class="fw-bold">Your Cart Items</h4>
           <svg id="close" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 72 72">
             <path d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
             </svg>
         </div>
-        <div class="my-3 d-flex items">
+
+        <!-- Cart items start -->
+        <div class="my-5 d-flex items border-bottom pb-4">
           <div class="col-2"><img src="assets/deal-1.png" alt="" class="me-3"></div>
-          <div class="col-6"><p>Item Name Here</p></div>
-          <div class="col-4 d-flex justify-content-end">
-            <h6>Rs 600</h6>
+          <div class="col-6"><p class="item-name fw-bold text-centers">Zinegr Burger</p></div>
+          <div class="col-4">
+            <h6 class="text-center">Rs 600</h6>
             <div class="counter">
               <span class="down" onClick='decreaseCount(event, this)'>-</span>
               <input type="text" id="input" value="1">
@@ -53,6 +55,72 @@
             </div>
           </div>
         </div>
+        <div class="my-5 d-flex items border-bottom pb-4">
+          <div class="col-2"><img src="assets/deal-1.png" alt="" class="me-3"></div>
+          <div class="col-6"><p class="item-name fw-bold text-centers">Chicken burger</p></div>
+          <div class="col-4">
+            <h6 class="text-center">Rs 600</h6>
+            <div class="counter">
+              <span class="down" onClick='decreaseCount(event, this)'>-</span>
+              <input type="text" id="input" value="1">
+              <span class="up"  onClick='increaseCount(event, this)'>+</span>
+            </div>
+          </div>
+        </div>
+        <div class="my-5 d-flex items border-bottom pb-4">
+          <div class="col-2"><img src="assets/deal-1.png" alt="" class="me-3"></div>
+          <div class="col-6"><p class="item-name fw-bold text-centers">Deal One Wow</p></div>
+          <div class="col-4">
+            <h6 class="text-center">Rs 600</h6>
+            <div class="counter">
+              <span class="down" onClick='decreaseCount(event, this)'>-</span>
+              <input type="text" id="input" value="1">
+              <span class="up"  onClick='increaseCount(event, this)'>+</span>
+            </div>
+          </div>
+        </div>
+        <div class="my-5 d-flex items border-bottom pb-4">
+          <div class="col-2"><img src="assets/deal-1.png" alt="" class="me-3"></div>
+          <div class="col-6"><p class="item-name fw-bold text-centers">Item Name Here</p></div>
+          <div class="col-4">
+            <h6 class="text-center">Rs 600</h6>
+            <div class="counter">
+              <span class="down" onClick='decreaseCount(event, this)'>-</span>
+              <input type="text" id="input" value="1">
+              <span class="up"  onClick='increaseCount(event, this)'>+</span>
+            </div>
+          </div>
+        </div>
+        <div class="my-5 d-flex items border-bottom pb-4">
+          <div class="col-2"><img src="assets/deal-1.png" alt="" class="me-3"></div>
+          <div class="col-6"><p class="item-name fw-bold text-centers">Item Name Here</p></div>
+          <div class="col-4">
+            <h6 class="text-center">Rs 600</h6>
+            <div class="counter">
+              <span class="down" onClick='decreaseCount(event, this)'>-</span>
+              <input type="text" id="input" value="1">
+              <span class="up"  onClick='increaseCount(event, this)'>+</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <h5>Total</h5>
+          <h5 class="ms-auto">Rs 1000</h5>
+        </div>
+        <div class="d-flex justify-content-between">
+          <h5>Tax 10%</h5>
+          <h5 class="ms-auto">Rs 100</h5>
+        </div>
+        <div class="d-flex justify-content-between">
+          <h5>Bill</h5>
+          <h5 class="ms-auto">Rs 1100</h5>
+        </div>
+
+        <button class="checkout-btn" type="submit">Checkout</button>
+
+        <!-- Cart items end -->
+
       </div>
     </nav>
     <div id="overlay"></div>
@@ -178,6 +246,27 @@
               <div class="row">
                 <div class="col item-info">
                   <h3 class="item-title">Family Deal Wow Wow</h3>
+                  <p class="item-decription">
+                    Shack Full house/jalapeño crunch (Beef/chicken) fries and drink
+                  </p>
+                  <span class="item-price">Rs-600</span>
+                </div>
+                <div class="col item-image">
+                  <img src="assets/deal-1.png" class="float-end rounded" alt="...">
+                  <div class="cart-button">
+                    <a href="#" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-md-6 col-12 mb-3">
+            <div class="item-card">
+              <div class="row">
+                <div class="col item-info">
+                  <h3 class="item-title">And My Fav Deal</h3>
                   <p class="item-decription">
                     Shack Full house/jalapeño crunch (Beef/chicken) fries and drink
                   </p>

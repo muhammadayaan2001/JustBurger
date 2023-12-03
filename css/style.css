@@ -99,7 +99,18 @@ a {
   color: white;
 }
 
-#cart ul {
+#cart .checkout-btn{
+  margin-top: 20px;
+  color: #fff;
+  background: #0d6efd;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  padding: 8px;
+  font-size: 24px;
+}
+
+/* #cart ul {
     padding: 0;
     margin-top: 25px;
 }
@@ -114,7 +125,7 @@ a {
     font-size: 32px;
     margin-bottom: 30px;
     text-decoration: none;
-}
+} */
 
 .cart-icon i{
   font-size: 24px;
@@ -175,7 +186,7 @@ a {
 }
 
 .hero-bg .hero-content{
-  margin-top: 8rem;
+  margin-top: 12rem;
 }
 
 .hero-bg .hero-text {
