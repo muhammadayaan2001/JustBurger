@@ -65,6 +65,7 @@ a {
     /* background-color: transparent; Set shopping items background as transparent */
     z-index: 6;
     border-radius: 25px 0px 0px 25px;
+    overflow-x: hidden;
     overflow-y: scroll;
     scrollbar-width: thin; /* For Firefox */
     scrollbar-color: yellow orange; /* For Firefox */
