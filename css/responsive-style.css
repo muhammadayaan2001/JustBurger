@@ -40,6 +40,10 @@
       width: 100px;
     }
 
+    /* Modal */
+    .modal-footer .modal-counter button span {
+      font-size: 12px;
+    }
   }
 
   /* CSS Rules for landscape mobile devices and tablets */

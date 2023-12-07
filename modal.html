@@ -1,0 +1,158 @@
+<!-- Deal with drink/other modal -->
+<div class="modal fade modal-xl" id="dealWithOptionModal" tabindex="-1" aria-labelledby="dealWithOptionModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col-lg-5 modal-content-left d-none d-lg-block">
+                    <img class="item-img" src="assets/deal-1.png" alt="">
+                </div>
+                <div class="col-md-12 col-lg-7 modal-content-right">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="dealWithOptionModalLabel">Deal One Wow</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="item-price fw-bold">Rs 600</h4>
+                        <p class="item-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+                            necessitatibus accusamus quidem</p>
+
+                            <img class="item-img d-lg-none" src="assets/deal-1.png" alt="">
+
+                        <div class="meal-variant d-flex justify-content-between my-3">
+                            <h5 class="sub-s1 fw-bold">Choose Your Variant </h5>
+                            <span class="badge bg-warning d-flex align-items-center">required</span>
+                        </div>
+
+                        <div class="choose-variant">
+                            <div class="form-check input-form">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="chickenRadio">
+                                <label class="form-check-label" for="chickenRadio">
+                                    Chicken
+                                </label>
+                            </div>
+                            <div class="form-check input-form">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="beefRadio">
+                                <label class="form-check-label" for="beefRadio">
+                                    Beef
+                                </label>
+                            </div>
+                        </div>
+                        <div class="choose-drink d-flex justify-content-between my-3">
+                            <h5 class="sub-s1 fw-bold">Choose Your Drink</h5>
+                            <span class="badge bg-warning d-flex align-items-center">required</span>
+                        </div>
+
+                        <div class="choose-drink">
+                            <div class="d-flex justify-content-between input-form">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="pepsiRadio">
+                                    <label class="form-check-label" for="flexRadioDefault">
+                                        Pepsi 500ml
+                                    </label>
+                                </div>
+                                <img class="drink-img" src="assets/pepsi-1-removebg-preview.png" alt="">    
+                            </div>
+                            <div class="d-flex justify-content-between input-form">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="7upRadio">
+                                    <label class="form-check-label" for="7upRadio">
+                                        7up 500ml
+                                    </label>
+                                </div>
+                                <img class="drink-img" src="assets/7up-1-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="special-message">
+                            <label for="exampleFormControlTextarea1" class="form-label">Special Instructions</label>
+                            <textarea class="form-control" placeholder="Please enter instructions for this item if have" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-counter">
+                            <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                            <input type="text" id="input" value="1">
+                            <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                            <button type="button" class="btn btn-primary"><span>Add To Cart - Total 600</span></button>
+                          </div>
+
+                      </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- End Deal Modal -->
+
+<!-- Cold Drink Modal -->
+<div class="modal fade modal-xl" id="coldDrinkModal" tabindex="-1" aria-labelledby="coldDrinkModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col-lg-5 modal-content-left d-none d-lg-block">
+                    <img class="item-img" src="assets/drinks.png" alt="">
+                </div>
+                <div class="col-md-12 col-lg-7 modal-content-right">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="coldDrinkModalLabel">Deal One Wow</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="item-price fw-bold">Rs 600</h4>
+                        <p class="item-decription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+                            necessitatibus accusamus quidem</p>
+
+                            <img class="item-img d-lg-none" src="assets/drinks.png" alt="">
+
+                        <div class="choose-drink d-flex justify-content-between my-3">
+                            <h5 class="sub-s1 fw-bold">Choose Your Drink</h5>
+                            <span class="badge bg-warning d-flex align-items-center">required</span>
+                        </div>
+
+                        <div class="choose-drink">
+                            <div class="d-flex justify-content-between input-form">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="pepsiRadio">
+                                    <label class="form-check-label" for="flexRadioDefault">
+                                        Pepsi 500ml
+                                    </label>
+                                </div>
+                                <img class="drink-img" src="assets/pepsi-1-removebg-preview.png" alt="">    
+                            </div>
+                            <div class="d-flex justify-content-between input-form">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="7upRadio">
+                                    <label class="form-check-label" for="7upRadio">
+                                        7up 500ml
+                                    </label>
+                                </div>
+                                <img class="drink-img" src="assets/7up-1-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="special-message">
+                            <label for="exampleFormControlTextarea1" class="form-label">Special Instructions</label>
+                            <textarea class="form-control" placeholder="Please enter instructions for this item if have" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-counter">
+                            <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                            <input type="text" id="input" value="1">
+                            <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                            <button type="button" class="btn btn-primary"><span>Add To Cart - Total 600</span></button>
+                          </div>
+
+                      </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- End Cold drink Modal -->

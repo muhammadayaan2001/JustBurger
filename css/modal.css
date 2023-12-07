@@ -1,0 +1,124 @@
+.modal-content {
+    padding: 12px;
+}
+.modal-content .item-img{
+    width: 100%;
+    border-radius: 10px;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: yellow orange; /* For Firefox */
+}
+
+.modal-content-left .modal.body {
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.modal-body {
+    max-height: 550px;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Change scrollbar color */
+/* For Webkit based browsers (Google Chrome, Safari) */
+.modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+.modal-body::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Change the scroll track color here */
+}
+
+/* Handle */
+.modal-body::-webkit-scrollbar-thumb {
+    background: #F9B209; /* Change the scrollbar color here */
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.modal-body::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Change the scrollbar color on hover here */
+}
+
+.modal-content-right{
+    border-left: 1px solid #dee2e6;
+}
+
+.modal-content-right .modal-header .btn-close{
+    background-color: #ebebeb;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+}
+.modal-content-right .modal-header h5{
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #000;
+}
+.modal-content-right .modal-body p.item-decription{
+    color: #718096;
+    font-size: .9rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.input-form{
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.form-check-input{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.input-form label{
+    margin: 5px 10px;
+    font-weight:700;
+}
+
+.choose-drink .drink-img{
+    width: 10%;
+}
+
+.modal-footer .modal-counter{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.modal-footer .modal-counter input {
+    width: 50px;
+    border: 0;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background: #0052cc;
+    color: #fff;
+    appearance: none;
+    outline: 0;
+  }
+  .modal-footer .modal-counter span {
+    display: block;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #0052cc;
+    user-select: none;
+  }
+  .modal-footer .modal-counter button {
+    width: 100%;
+    background-color: #0052cc;
+  }
+
+  .modal-footer .modal-counter button span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+/* 
+
+*/
