@@ -16,11 +16,12 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/test-style.css">
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/responsive-style.css ">
   <!-- favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/justburgerfavicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/justburgerfavicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/justburgerfavicon_io/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/justburgerfavicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/justburgerfavicon_io/favicon-16x16.png">
 </head>
 
 <body>
@@ -32,96 +33,112 @@
           <a class="" href="#"><img src="assets/logo.png" alt="" srcset=""></a>
         </div>
 
-        <d  iv id="cart-icon" class="cart-icon">
+        <div id="cart-icon" class="cart-icon">
           <span class="badge">0</span>
           <i class="fa-solid fa-cart-shopping"></i>
-        </d>
+        </div>
       </div>
-      
+
       <div id="cart">
         <div class="cart-details d-flex justify-content-between">
           <h4 class="fw-bold">Your Cart Items</h4>
           <svg id="close" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 72 72">
-            <path d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
-            </svg>
+            <path
+              d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z">
+            </path>
+          </svg>
         </div>
 
         <!-- Cart items start -->
         <div class="my-5 d-flex items border-bottom pb-4">
           <div class="col-2"><img src="assets/deal-1.png" alt="" class="me-3"></div>
-          <div class="col-6"><p class="item-name fw-bold text-centers">Zinegr Burger</p></div>
+          <div class="col-6">
+            <p class="item-name fw-bold text-centers">Zinegr Burger</p>
+          </div>
           <div class="col-4">
             <h6 class="text-center">Rs 600</h6>
             <div class="counter">
               <span class="down" onClick='decreaseCount(event, this)'>-</span>
               <input type="text" id="input" value="1">
-              <span class="up"  onClick='increaseCount(event, this)'>+</span>
+              <span class="up" onClick='increaseCount(event, this)'>+</span>
             </div>
           </div>
         </div>
         <div class="my-5 d-flex items border-bottom pb-4">
           <div class="col-2"><img src="assets/deal-1.png" alt="" class="me-3"></div>
-          <div class="col-6"><p class="item-name fw-bold text-centers">Chicken burger</p></div>
+          <div class="col-6">
+            <p class="item-name fw-bold text-centers">Chicken burger</p>
+          </div>
           <div class="col-4">
             <h6 class="text-center">Rs 600</h6>
             <div class="counter">
               <span class="down" onClick='decreaseCount(event, this)'>-</span>
               <input type="text" id="input" value="1">
-              <span class="up"  onClick='increaseCount(event, this)'>+</span>
+              <span class="up" onClick='increaseCount(event, this)'>+</span>
             </div>
           </div>
         </div>
         <div class="my-5 d-flex items border-bottom pb-4">
           <div class="col-2"><img src="assets/deal-1.png" alt="" class="me-3"></div>
-          <div class="col-6"><p class="item-name fw-bold text-centers">Deal One Wow</p></div>
+          <div class="col-6">
+            <p class="item-name fw-bold text-centers">Deal One Wow</p>
+          </div>
           <div class="col-4">
             <h6 class="text-center">Rs 600</h6>
             <div class="counter">
               <span class="down" onClick='decreaseCount(event, this)'>-</span>
               <input type="text" id="input" value="1">
-              <span class="up"  onClick='increaseCount(event, this)'>+</span>
+              <span class="up" onClick='increaseCount(event, this)'>+</span>
             </div>
           </div>
         </div>
         <div class="my-5 d-flex items border-bottom pb-4">
           <div class="col-2"><img src="assets/deal-1.png" alt="" class="me-3"></div>
-          <div class="col-6"><p class="item-name fw-bold text-centers">Item Name Here</p></div>
+          <div class="col-6">
+            <p class="item-name fw-bold text-centers">Item Name Here</p>
+          </div>
           <div class="col-4">
             <h6 class="text-center">Rs 600</h6>
             <div class="counter">
               <span class="down" onClick='decreaseCount(event, this)'>-</span>
               <input type="text" id="input" value="1">
-              <span class="up"  onClick='increaseCount(event, this)'>+</span>
+              <span class="up" onClick='increaseCount(event, this)'>+</span>
             </div>
           </div>
         </div>
         <div class="my-5 d-flex items border-bottom pb-4">
           <div class="col-2"><img src="assets/deal-1.png" alt="" class="me-3"></div>
-          <div class="col-6"><p class="item-name fw-bold text-centers">Item Name Here</p></div>
+          <div class="col-6">
+            <p class="item-name fw-bold text-centers">Item Name Here</p>
+          </div>
           <div class="col-4">
             <h6 class="text-center">Rs 600</h6>
             <div class="counter">
               <span class="down" onClick='decreaseCount(event, this)'>-</span>
               <input type="text" id="input" value="1">
-              <span class="up"  onClick='increaseCount(event, this)'>+</span>
+              <span class="up" onClick='increaseCount(event, this)'>+</span>
             </div>
           </div>
         </div>
 
-        <div class="d-flex justify-content-between">
-          <h5>Total</h5>
-          <h5 class="ms-auto">Rs 1000</h5>
-        </div>
-        <div class="d-flex justify-content-between">
-          <h5>Tax 10%</h5>
-          <h5 class="ms-auto">Rs 100</h5>
-        </div>
-        <div class="d-flex justify-content-between">
-          <h5>Bill</h5>
-          <h5 class="ms-auto">Rs 1100</h5>
+        <div class="payment-details">
+          <div class="d-flex justify-content-between">
+            <p>Total</p>
+            <p class="ms-auto">Rs 1000</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p>Tax 10%</p>
+            <p class="ms-auto">Rs 100</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p>Bill</p>
+            <p class="ms-auto">Rs 1100</p>
+          </div>
         </div>
 
-        <button class="checkout-btn" type="submit">Checkout</button>
+        <button class="checkout-btn" type="submit">Checkout
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
 
         <!-- Cart items end -->
 
@@ -129,15 +146,16 @@
     </nav>
     <div id="overlay"></div>
   </header>
-  
+
   <main>
     <div class="hero-bg" id="hero-bg">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <div class="ms-3 hero-content">
-              <h1 class="hero-text text-white" data-aos="fade-right" data-aos-duration="2000">Lorem ipsum dolor, sit amet consectetur adipisicing elit</h1>
-              <h6 class ="text-white" data-aos="fade-right" data-aos-duration="1000"> – Demo Text</h6>
+              <h1 class="hero-text text-white" data-aos="fade-right" data-aos-duration="2000">Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit</h1>
+              <h6 class="text-white" data-aos="fade-right" data-aos-duration="1000"> – Demo Text</h6>
               <div data-aos="fade-right" data-aos-duration="1000">
                 <a class="banner-btn" href="">View Menu</a>
               </div>
@@ -161,13 +179,14 @@
         </div>
 
         <ul>
+          <li><a href="#new-arrivals">New Arrivals</a></li>
           <li><a href="#deals">Deal</a></li>
-          <li><a href="#family">Family Box</a></li>
           <li><a href="#chiken-burger">Chicken Burger</a></li>
-          <li><a href="#">Beef Burger</a></li>
-          <li><a href="#">Fries</a></li>
-          <li><a href="#">Cold Drinks</a></li>
-          <li><a href="#">Extras</a></li>
+          <li><a href="#beef-burger">Beef Burger</a></li>
+          <li><a href="#fries">Fries</a></li>
+          <li><a href="#family">Family Meal</a></li>
+          <li><a href="#drinks">Cold Drinks</a></li>
+          <li><a href="#extras">Extras</a></li>
         </ul>
 
         <div class="right-arrow active">
@@ -180,14 +199,68 @@
       </div>
     </div>
 
+    <!-- New Arival Box -->
+    <div id="new-arrivals" class="new-arrivals section my-5">
+      <div class="container">
+        <h4 class="text-uppercase fw-bold">New Arrivals</h4>
+        <div class="row my-5">
+          <div class="col-sm-6 col-md-6 col-lg-3 mb-3">
+            <div class="new-arrival-card rounded-pill">
+              <img src="assets/get_4burgers.png" class="rounded-pill" alt="...">
+              <div class="overlay">
+                <div class="text">
+                  <p>4 Burgers</p>
+                  <p>Rs 1200</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3 mb-3">
+            <div class="new-arrival-card rounded-pill">
+              <img src="assets/hot_offer.png" class="rounded-pill" alt="...">
+              <div class="overlay">
+                <div class="text">
+                  <p>Hot Offer</p>
+                  <p>Rs 1200</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3 mb-3">
+            <div class="new-arrival-card rounded-pill">
+              <img src="assets/deal-1.png" class="rounded-pill" alt="...">
+              <div class="overlay">
+                <div class="text">
+                  <p>Combo Deal</p>
+                  <p>Rs 1200</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3 mb-3">
+            <div class="new-arrival-card rounded-pill">
+              <img src="assets/fries-1.png" class="rounded-pill" alt="...">
+              <div class="overlay">
+                <div class="text">
+                  <p>Regular Fries</p>
+                  <p>Rs 1200</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <!-- Deals -->
-    <div id="deals" class="deals my-5">
+    <div id="deals" class="deals section my-5">
       <div class="container">
         <h1 class="text-uppercase">Deals</h1>
 
         <div class="row my-3">
           <div class="col-md-6 col-12 mb-3">
-            <div class="item-card">
+            <div class="item-card" data-bs-toggle="modal" data-bs-target="#dealWithOptionModal">
               <div class="row">
                 <div class="col item-info">
                   <h3 class="item-title">Deal One WOW</h3>
@@ -199,14 +272,15 @@
                 <div class="col item-image">
                   <img src="assets/deal-1.png" class="float-end rounded" alt="...">
                   <div class="cart-button">
-                    <a href="#" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></a>
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#dealWithOptionModal"><i class="fa fa-plus"></i></button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <div class="item-card">
+            <div class="item-card" data-bs-toggle="modal" data-bs-target="#dealWithOptionModal">
               <div class="row">
                 <div class="col item-info">
                   <h3 class="item-title">Deal Two OMG</h3>
@@ -218,7 +292,8 @@
                 <div class="col item-image">
                   <img src="assets/deal-1.png" class="float-end rounded" alt="...">
                   <div class="cart-button">
-                    <a href="#" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></a>
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#dealWithOptionModal"><i class="fa fa-plus"></i></button>
                   </div>
                 </div>
               </div>
@@ -227,7 +302,7 @@
         </div>
         <div class="row my-3">
           <div class="col-md-6 col-12 mb-3">
-            <div class="item-card">
+            <div class="item-card" data-bs-toggle="modal" data-bs-target="#dealWithOptionModal">
               <div class="row">
                 <div class="col item-info">
                   <h3 class="item-title">And My Fav Deal</h3>
@@ -239,14 +314,15 @@
                 <div class="col item-image">
                   <img src="assets/deal-1.png" class="float-end rounded" alt="...">
                   <div class="cart-button">
-                    <a href="#" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></a>
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#dealWithOptionModal"><i class="fa fa-plus"></i></button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <div class="item-card">
+            <div class="item-card" data-bs-toggle="modal" data-bs-target="#dealWithOptionModal">
               <div class="row">
                 <div class="col item-info">
                   <h3 class="item-title">Family Deal Wow Wow</h3>
@@ -258,7 +334,8 @@
                 <div class="col item-image">
                   <img src="assets/deal-1.png" class="float-end rounded" alt="...">
                   <div class="cart-button">
-                    <a href="#" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></a>
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#dealWithOptionModal"><i class="fa fa-plus"></i></button>
                   </div>
                 </div>
               </div>
@@ -267,7 +344,7 @@
         </div>
         <div class="row my-3">
           <div class="col-md-6 col-12 mb-3">
-            <div class="item-card">
+            <div class="item-card" data-bs-toggle="modal" data-bs-target="#dealWithOptionModal">
               <div class="row">
                 <div class="col item-info">
                   <h3 class="item-title">And My Fav Deal</h3>
@@ -279,7 +356,8 @@
                 <div class="col item-image">
                   <img src="assets/deal-1.png" class="float-end rounded" alt="...">
                   <div class="cart-button">
-                    <a href="#" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i></a>
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#dealWithOptionModal"><i class="fa fa-plus"></i></button>
                   </div>
                 </div>
               </div>
@@ -293,20 +371,69 @@
     </div>
 
     <!-- Family Box -->
-    <div id="family" class="family-box">
+    <div id="family" class="family-box section">
       <div class="container">
+        <h1 class="text-uppercase">Family Meal</h1>
+        <div class="row my-3">
+          <div class="col-md-6 col-12 mb-3">
+            <div class="item-card" data-bs-toggle="modal" data-bs-target="#dealWithOptionModal">
+              <div class="row">
+                <div class="col item-info">
+                  <h3 class="item-title">Oh My God Family Box</h3>
+                  <p class="item-decription">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <span class="item-price">Rs-600</span>
+                </div>
+                <div class="col item-image">
+                  <img src="assets/get_4burgers.png" class="float-end rounded" alt="...">
+                  <div class="cart-button">
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#dealWithOptionModal"><i class="fa fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- drinks -->
+    <div id="drinks" class="drinks section">
+      <div class="container">
+        <h1 class="text-uppercase">Drinks</h1>
+        <div class="row my-3">
+          <div class="col-md-6 col-12 mb-3">
+            <div class="item-card" data-bs-toggle="modal" data-bs-target="#coldDrinkModal">
+              <div class="row">
+                <div class="col item-info">
+                  <h3 class="item-title">Cold Drinks</h3>
+                  <span class="item-price">Rs-100</span>
+                </div>
+                <div class="col item-image">
+                  <img src="assets/drinks.png" class="float-end rounded" alt="...">
+                  <div class="cart-button">
+                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#coldDrinkModal"><i class="fa fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Chicken Burger -->
-    <div id="chiken-burger" class="chiken-burger">
+    <!-- <div id="chiken-burger" class="chiken-burger section">
       <div class="container">
 
       </div>
-    </div>
+    </div> -->
 
-    <!-- <div id="modal"></div> -->
-
+    <!-- Include modal file -->
+    <div id="modal"></div>
 
   </main>
 
@@ -323,6 +450,7 @@
     </script>
   <script src="js/main.js"></script>
   <script src="js/counter.js"></script>
+  <script src="js/scrollable-tabs.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -337,12 +465,6 @@
         .then(data => {
           modal.innerHTML = data;
         });
-
-      // fetch('footer.html')
-      //   .then(response => response.text())
-      //   .then(data => {
-      //     footer.innerHTML = data;
-      //   });
     }
 
     // Call the function to include partial views
