@@ -44,6 +44,11 @@
     .modal-footer .modal-counter button span {
       font-size: 12px;
     }
+
+    /* new arrival */
+    .new-arrival-card .overlay .text {
+      font-size: 1rem;
+    }
   }
 
   /* CSS Rules for landscape mobile devices and tablets */
@@ -67,6 +72,10 @@
 
     #cart.list {
       border-radius: 0px;
+    }
+    /* new arrival */
+    .new-arrival-card .overlay .text {
+      font-size: .8rem;
     }
   }
 
@@ -99,9 +108,10 @@
       padding: 15px;
     }
 
-    /* #cart.list {
-      border-radius: 0px;
-    } */
+    /* new arrival */
+    .new-arrival-card .overlay .text {
+      font-size: 1rem;
+    }
   }
 
   /* CSS Rules for laptops and desktops */

@@ -17,7 +17,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/test-style.css">
   <link rel="stylesheet" href="css/modal.css">
-  <link rel="stylesheet" href="css/responsive-style.css ">
+  <link rel="stylesheet" href="css/responsive-style.css">
+  <link rel="stylesheet" href="css/owl.carousel.2-2.3.4.min.css">
   <!-- favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/justburgerfavicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/justburgerfavicon_io/favicon-32x32.png">
@@ -203,52 +204,44 @@
     <div id="new-arrivals" class="new-arrivals section my-5">
       <div class="container">
         <h1 class="text-uppercase fw-bold">New Arrivals</h1>
-        <div class="row my-5">
-          <div class="col-sm-6 col-md-6 col-lg-3 mb-3">
-            <div class="new-arrival-card rounded-pill">
-              <img src="assets/get_4burgers.png" class="rounded-pill" alt="...">
-              <div class="overlay">
-                <div class="text">
-                  <p>4 Burgers</p>
-                  <p>Rs 1200</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3 mb-3">
-            <div class="new-arrival-card rounded-pill">
-              <img src="assets/hot_offer.png" class="rounded-pill" alt="...">
-              <div class="overlay">
-                <div class="text">
-                  <p>Hot Offer</p>
-                  <p>Rs 1200</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3 mb-3">
-            <div class="new-arrival-card rounded-pill">
-              <img src="assets/deal-1.png" class="rounded-pill" alt="...">
-              <div class="overlay">
-                <div class="text">
-                  <p>Combo Deal</p>
-                  <p>Rs 1200</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-lg-3 mb-3">
-            <div class="new-arrival-card rounded-pill">
-              <img src="assets/beef-trio.png" class="rounded-pill" alt="...">
-              <div class="overlay">
-                <div class="text">
-                  <p>Beef Trio</p>
-                  <p>Rs 1200</p>
-                </div>
-              </div>
-            </div>
-          </div>
 
+        <div class="owl-carousel">
+          <div class="new-arrival-card rounded-pill">
+            <img src="assets/get_4burgers.png" class="rounded-pill" alt="...">
+            <div class="overlay">
+              <div class="text">
+                <p>4 Burgers</p>
+                <p>Rs 1200</p>
+              </div>
+            </div>
+          </div>
+          <div class="new-arrival-card rounded-pill">
+            <img src="assets/hot_offer.png" class="rounded-pill" alt="...">
+            <div class="overlay">
+              <div class="text">
+                <p>Hot Offer</p>
+                <p>Rs 1200</p>
+              </div>
+            </div>
+          </div>
+          <div class="new-arrival-card rounded-pill">
+            <img src="assets/deal-1.png" class="rounded-pill" alt="...">
+            <div class="overlay">
+              <div class="text">
+                <p>Combo Deal</p>
+                <p>Rs 1200</p>
+              </div>
+            </div>
+          </div>
+          <div class="new-arrival-card rounded-pill">
+            <img src="assets/beef-trio.png" class="rounded-pill" alt="...">
+            <div class="overlay">
+              <div class="text">
+                <p>Beef Trio</p>
+                <p>Rs 1200</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -603,14 +596,33 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js"></script>           
+  <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/counter.js"></script>
   <script src="js/scrollable-tabs.js"></script>
+  <script src="js/owl.carousel.2-2.3.4.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
   <script>
+
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        items:2,
+        // loop:true,
+        margin:30,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        responsive:{
+            600:{
+                items:4
+            }
+        }
+      });
+    });
+
     // JavaScript code to fetch and include partial views
     function includeHTML() {
       const modal = document.getElementById('modal');
