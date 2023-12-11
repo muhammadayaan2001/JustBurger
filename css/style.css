@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shizuru&display=swap');
 body {
   margin: 0px;
   padding: 0px;
@@ -18,7 +18,20 @@ a {
 
 /* header */
 .logo img{
-  width: 250px;
+  /* width: 250px; */
+  width: 70px;
+}
+.logo .name{
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Shizuru';
+  margin-bottom: 0px;
+}
+.logo .slogan{
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
 }
 /* Hamburger */
 .cart-icon {
@@ -181,7 +194,7 @@ a {
 
 /* hero-bg section */
 .hero-bg {
-  min-height: 500px;
+  min-height: 500px;  
   background-color: #1d1d1d;
 }
 
@@ -442,4 +455,13 @@ a {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.st-heading{
+  border: 1px solid #1d1d1d;
+  background-color: #1d1d1d;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  color: #F9B209;
 }

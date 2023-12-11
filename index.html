@@ -30,8 +30,15 @@
     <!-- place navbar here -->
     <nav class="navbar navbar-light bg-light">
       <div class="container">
-        <div class="logo">
-          <a class="" href="#"><img src="assets/logo.png" alt="" srcset=""></a>
+        <div class="logo d-flex">
+          <!-- <a class="" href="#"><img src="assets/logo.png" alt="" srcset=""></a> -->
+          <a class="" href="#">
+            <img src="assets/justburgerfavicon_io/android-chrome-192x192.png" alt="" srcset="">
+          </a>
+          <div class="d-block ms-3 mt-2">
+            <P class="name">Just Burger</P>
+            <span class="slogan">The Real Taste</span>
+          </div>
         </div>
 
         <div id="cart-icon" class="cart-icon">
@@ -207,11 +214,12 @@
     </div>
 
     <!-- New Arival Box -->
-    <div id="new-arrivals" class="new-arrivals section my-5">
+    <div id="new-arrivals" class="new-arrivals section mt-5">
       <div class="container">
-        <h1 class="text-uppercase fw-bold">New Arrivals</h1>
+        <!-- <h1 class="text-uppercase"><span class="text-warning">New</span> Arrivals</h1> -->
+        <h3 class="text-uppercase st-heading">New Arrivals <i class="fa fa-sparkle"></i></h3>
 
-        <div class="nw-arrival owl-carousel">
+        <div class="nw-arrival owl-carousel my-3">
           <div class="new-arrival-card rounded-pill">
             <img src="assets/get_4burgers.png" class="rounded-pill" alt="...">
             <div class="overlay">
@@ -255,7 +263,7 @@
     <!-- Deals -->
     <div id="deals" class="deals section my-5">
       <div class="container">
-        <h1 class="text-uppercase">Deals</h1>
+        <h3 class="text-uppercase st-heading">Deals</h3>
 
         <div class="row my-3">
           <div class="col-md-6 col-12 mb-3">
@@ -322,7 +330,7 @@
             <div class="item-card" data-bs-toggle="modal" data-bs-target="#dealWithOptionModal">
               <div class="row">
                 <div class="col item-info">
-                  <h3 class="item-title">Family Deal Wow Wow</h3>
+                  <h3 class="item-title">Family Deal Wow</h3>
                   <p class="item-decription">
                     Shack Full house/jalapeño crunch (Beef/chicken) fries and drink
                   </p>
@@ -366,7 +374,7 @@
     <!-- Family Box -->
     <div id="family" class="family-box section">
       <div class="container">
-        <h1 class="text-uppercase">Family Meal</h1>
+        <h3 class="text-uppercase st-heading">Family Meal</h3>
         <div class="row my-3">
           <div class="col-md-6 col-12 mb-3">
             <div class="item-card" data-bs-toggle="modal" data-bs-target="#dealWithOptionModal">
@@ -395,7 +403,7 @@
     <!-- Chicken Burger -->
     <div id="chiken-burger" class="chiken-burger section">
       <div class="container">
-        <h1 class="text-uppercase">Chiken Burger</h1>
+        <h3 class="text-uppercase st-heading">Chiken Burger</h3>
         <div class="row my-3">
           <div class="col-md-6 col-12 mb-3">
             <div class="item-card" data-bs-toggle="modal" data-bs-target="#dealWithOptionModal">
@@ -444,7 +452,7 @@
     <!-- Beef Burger -->
     <div id="beef-burger" class="beef-burger section">
       <div class="container">
-        <h1 class="text-uppercase">Beef Burger</h1>
+        <h3 class="text-uppercase st-heading">Beef Burger</h3>
         <div class="row my-3">
           <div class="col-md-6 col-12 mb-3">
             <div class="item-card" data-bs-toggle="modal" data-bs-target="#dealWithOptionModal">
@@ -513,7 +521,7 @@
     <!-- fries Burger -->
     <div id="fries" class="fries section">
       <div class="container">
-        <h1 class="text-uppercase">Fries</h1>
+        <h3 class="text-uppercase st-heading">Fries</h3>
         <div class="row my-3">
           <div class="col-md-6 col-12 mb-3">
             <div class="item-card" data-bs-toggle="modal" data-bs-target="#dealWithOptionModal">
@@ -562,7 +570,7 @@
     <!-- drinks -->
     <div id="drinks" class="drinks section">
       <div class="container">
-        <h1 class="text-uppercase">Drinks</h1>
+        <h3 class="text-uppercase st-heading">Drinks</h3>
         <div class="row my-3">
           <div class="col-md-6 col-12 mb-3">
             <div class="item-card" data-bs-toggle="modal" data-bs-target="#coldDrinkModal">
