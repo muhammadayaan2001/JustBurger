@@ -1,12 +1,12 @@
   /* CSS Rules for mobile devices */
   @media only screen and (max-width: 480px) {
+    
     .hero-bg .hero-content {
-      margin-top: 4rem;
+      padding: 3rem 0rem 3rem 0rem;
     }
-
+    
     .hero-bg .floating-image {
-      width: 100%;
-      margin: 50px 0px 50px 0px;
+      width: 100% !important;
     }
 
     .item-card .item-title {
@@ -82,13 +82,13 @@
   /* CSS Rules for tablets and small laptops */
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .hero-bg .floating-image {
-      width: 100%;
-      margin: 50px 0px 50px 0px;
+      width: 100% !important;
+      /* margin: 50px 0px 50px 0px; */
     }
 
-    .hero-bg .hero-content {
+    /* .hero-bg .hero-content {
       margin-top: 12rem;
-    }
+    } */
 
     .item-card .item-title {
       font-size: 16px;
