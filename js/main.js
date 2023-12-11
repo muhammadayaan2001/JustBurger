@@ -22,3 +22,32 @@ const disappearOverlay = () => {
 };
 
 // ======== Hamburger Ends ========= ///
+
+// ======== Owl carousel slider ====== ///
+
+$(document).ready(function(){
+  $(".nw-arrival").owlCarousel({
+    items:2,
+    loop:true,
+    margin:30,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+        600:{
+            items:4
+        }
+    }
+  });
+  $(".herobg-carousel").owlCarousel({
+    items:1,
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    // responsive:{
+    //     600:{
+    //         items:4
+    //     }
+    // }
+  });
+});

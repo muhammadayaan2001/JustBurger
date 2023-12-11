@@ -151,19 +151,25 @@
   <main>
     <div class="hero-bg" id="hero-bg">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="ms-3 hero-content">
-              <h1 class="hero-text text-white" data-aos="fade-right" data-aos-duration="2000">Lorem ipsum dolor, sit
-                amet consectetur adipisicing elit</h1>
-              <h6 class="text-white" data-aos="fade-right" data-aos-duration="1000"> – Demo Text</h6>
-              <div data-aos="fade-right" data-aos-duration="1000">
-                <a class="banner-btn" href="">View Menu</a>
+        <div class="hero-content">
+          <div class="row">
+            <div class="col-md-6 mb-5">
+              <div class="ms-3 hero-text">
+                <h1 class="text-white" data-aos="fade-right" data-aos-duration="2000">Lorem ipsum dolor, sit
+                  amet consectetur adipisicing elit</h1>
+                <h6 class="text-white" data-aos="fade-right" data-aos-duration="1000"> – Demo Text</h6>
+                <div data-aos="fade-right" data-aos-duration="1000">
+                  <a class="banner-btn" href="">View Menu</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <img class="floating-image" src="assets/hero_burger_image.png" alt="" srcset="">
+            <div class="col-md-6">
+            <div class="herobg-carousel owl-carousel">
+              <img class="floating-image text-white" src="assets/herobg-300x300.png" alt="hero_bg1_image" srcset="">
+              <img class="floating-image text-white" src="assets/herobg_2-300x300.png" alt="hero_bg2_image" srcset="">
+              <img class="floating-image text-white" src="assets/herobg_3-300x300.png" alt="hero_bg3_image" srcset="">
+            </div>
+            </div>
           </div>
         </div>
       </div>
@@ -205,7 +211,7 @@
       <div class="container">
         <h1 class="text-uppercase fw-bold">New Arrivals</h1>
 
-        <div class="owl-carousel">
+        <div class="nw-arrival owl-carousel">
           <div class="new-arrival-card rounded-pill">
             <img src="assets/get_4burgers.png" class="rounded-pill" alt="...">
             <div class="overlay">
@@ -596,8 +602,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
-  <script src="js/main.js"></script>           
   <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/counter.js"></script>
   <script src="js/scrollable-tabs.js"></script>
   <script src="js/owl.carousel.2-2.3.4.min.js"></script>
@@ -606,22 +612,6 @@
     AOS.init();
   </script>
   <script>
-
-    $(document).ready(function(){
-      $(".owl-carousel").owlCarousel({
-        items:2,
-        // loop:true,
-        margin:30,
-        autoplay:true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true,
-        responsive:{
-            600:{
-                items:4
-            }
-        }
-      });
-    });
 
     // JavaScript code to fetch and include partial views
     function includeHTML() {
