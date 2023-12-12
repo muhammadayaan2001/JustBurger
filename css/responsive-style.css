@@ -4,6 +4,9 @@
     .hero-bg .hero-content {
       padding: 3rem 0rem 3rem 0rem;
     }
+    .hero-bg .bg-img{
+      display: none;
+    }
     
     .hero-bg .floating-image {
       width: 100% !important;
@@ -49,10 +52,24 @@
     .new-arrival-card .overlay .text {
       font-size: 1rem;
     }
+    .body-bgImage-left{
+      display: none;
+    }
+    .body-bgImage-right{
+      display: none;
+    }
   }
 
   /* CSS Rules for landscape mobile devices and tablets */
   @media only screen and (min-width: 481px) and (max-width: 767px) {
+    .hero-bg .bg-img{
+      display: none;
+    }
+    
+    .hero-bg .floating-image {
+      width: 100% !important;
+    }
+
     .item-card .item-title {
       font-size: 16px;
     }
@@ -77,18 +94,24 @@
     .new-arrival-card .overlay .text {
       font-size: .8rem;
     }
+
+    .body-bgImage-left{
+      display: none;
+    }
+    .body-bgImage-right{
+      display: none;
+    }
   }
 
   /* CSS Rules for tablets and small laptops */
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .hero-bg .floating-image {
       width: 100% !important;
-      /* margin: 50px 0px 50px 0px; */
     }
 
-    /* .hero-bg .hero-content {
-      margin-top: 12rem;
-    } */
+    .hero-bg .bg-img{
+      display: none;
+    }
 
     .item-card .item-title {
       font-size: 16px;
@@ -112,11 +135,31 @@
     .new-arrival-card .overlay .text {
       font-size: 1rem;
     }
+    .body-bgImage-left{
+      /* display:none; */
+      left: 0px;
+      height: 70px;
+      margin-top: -110px;
+    }
+    .body-bgImage-right{
+      right: 15px;
+      height: 70px;
+      margin-top: -110px;
+    }
   }
 
   /* CSS Rules for laptops and desktops */
-  /* @media only screen and (min-width: 1025px) {
-    .hero-bg .hero-content {
-      margin-top: 78px;
-     }
-  } */
+  @media only screen and (min-width: 1025px) and (max-width: 1820px) {
+    .body-bgImage-left{
+      left: 22px;
+      transform: rotate(320deg);
+      height: 100px;
+      margin-top: -125px;  
+    }
+    .body-bgImage-right{
+      right: 22px;
+      transform: rotate(44deg);
+      height: 100px;
+      margin-top: -125px;
+    }
+  }

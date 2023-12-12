@@ -201,6 +201,26 @@ a {
 .hero-bg .hero-content{
   padding: 8rem 0rem 8rem 0rem;
 }
+
+.hero-bg .bg-img{
+  position: absolute;
+  top: 25rem;
+  left: 5rem;
+  opacity: .1;
+  animation: bgImgTransform 3s infinite;
+  transform: rotate(44deg);
+  height: 300px;
+}
+
+@keyframes bgImgTransform {
+  0% {
+    transform: rotate(44deg);
+  }
+  100% {
+    transform: rotate(320deg);
+  }
+}
+
 .hero-bg .hero-text{
   margin-top: 2rem;
 }
@@ -349,6 +369,23 @@ a {
 /* Tab slider end */
 
 /* Item Card */
+
+.body-bgImage-left{
+  position: absolute;
+  z-index: -1;
+  left: 10rem;
+  transform: rotate(320deg);
+  height: 155px;
+  margin-top: -126px;
+}
+.body-bgImage-right{
+  position: absolute;
+  z-index: -1;
+  right: 10rem;
+  transform: rotate(44deg);
+  height: 155px;
+  margin-top: -126px;
+}
 .item-card{
   position: relative;
   background-color: #fff;
@@ -431,7 +468,7 @@ a {
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: #f9b109d9;
+  background-color: #1d1d1de6;
   overflow: hidden;
   width: 100%;
   height:0;
@@ -463,5 +500,6 @@ a {
   border-radius: 5px;
   padding: 10px;
   text-align: center;
-  color: #F9B209;
+  color: #ffffff;
+  font-family: 'Shizuru';
 }
