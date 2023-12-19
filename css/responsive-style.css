@@ -58,6 +58,10 @@
     .body-bgImage-right{
       display: none;
     }
+
+    .ft-text, .ft-text a {
+      font-size: 15px;
+    }
   }
 
   /* CSS Rules for landscape mobile devices and tablets */
