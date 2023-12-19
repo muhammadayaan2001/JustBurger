@@ -18,8 +18,6 @@ function increaseCount(a, b) {
   }
 
   let counter = document.getElementById("input");
-  console.log("current input value: " + counter.value);
-
   counter.addEventListener('input', function() {
     console.log("Input value changed: " + counter.value);
     // You can perform additional actions or checks based on the updated input value here
