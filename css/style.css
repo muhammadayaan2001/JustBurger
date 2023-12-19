@@ -202,25 +202,6 @@ a {
   padding: 8rem 0rem 8rem 0rem;
 }
 
-.hero-bg .bg-img{
-  position: absolute;
-  top: 25rem;
-  left: 5rem;
-  opacity: .1;
-  animation: bgImgTransform 3s infinite;
-  transform: rotate(44deg);
-  height: 300px;
-}
-
-@keyframes bgImgTransform {
-  0% {
-    transform: rotate(44deg);
-  }
-  100% {
-    transform: rotate(320deg);
-  }
-}
-
 .hero-bg .hero-text{
   margin-top: 2rem;
 }
@@ -502,4 +483,20 @@ a {
   text-align: center;
   color: #ffffff;
   font-family: 'Shizuru';
+}
+
+/* Footer */
+footer{
+  background-color: #1d1d1df7;
+  padding: 20px;
+  text-align: center;
+}
+
+.ft-text, .ft-text a{
+  color: #d7d7d7;
+  cursor: pointer;
+}
+
+.ft-text a:hover{
+  color: #fff;
 }
